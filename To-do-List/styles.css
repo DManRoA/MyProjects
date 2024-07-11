@@ -1,0 +1,173 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0;
+    font-style: oblique;
+    text-align: center;
+}
+
+.Titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: aqua;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.divCrear{
+    display: flex;
+    width: 400px;
+    height: 80px;
+    margin: auto 200px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btnCreate{
+    
+    border-radius: 15px;
+    font-size: 17px;
+    padding: 5px 40px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+}
+
+/*Bloque inputs*/
+
+.task{
+    width: 600px;
+    border-radius: 10px;
+    background-color: aqua;
+    padding: 20px 20px;
+}
+
+.task.dissapear{
+    display: none;
+}
+
+.formElement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputData{
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
+
+.divRadio.inputData{
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#Date{
+    width: 50%;
+}
+
+/*Bloque Div Mostrar Tareas*/
+
+.show-task{
+    background-color: white;
+    width: 900px;
+    height: auto;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto 1fr;
+    padding-top: 3px;
+    padding-right: 5px;
+    gap: 5px;
+    border-radius: 10px;
+    background-color: aqua;
+    margin: 5px 5px;
+    padding: 10px 5px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+}
+
+.container.appear{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.firstRowClass{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.taskAreaClass{
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+}
+
+.thirdRowClass{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.stateTaskClass{
+    color: red;
+}
+.stateTaskClass.textColor{
+    color: green;
+}
+
+.fourthRowClass{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.priorityTaskClass.High{
+    color: Red;
+}
+
+.priorityTaskClass.Medium{
+    color: Yellow;
+}
+
+.priorityTaskClass.Low{
+    color: green;
+}
+
+
+
+
